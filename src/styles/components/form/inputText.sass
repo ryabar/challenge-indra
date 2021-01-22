@@ -1,0 +1,40 @@
+.inputText
+    display: flex
+    align-items: center
+    position: relative
+    width: 100%
+
+.inputText__label
+    display: inline-block
+    position: absolute
+    z-index: 1
+    margin-left: 16px
+    font-size: $fontSize-16
+    font-weight: $fontWeight-regular
+    color: $black-3
+    transition: .3s
+
+.inputText__label--focused
+    font-size: 12px
+    margin-bottom: 22px
+
+.inputText__input
+    height: calc( 54px - 32px )
+    border: 1px solid $snow
+    border-radius: 4px
+    // padding-left: 16px
+    // padding-right: 16px
+    // padding-bottom: 10px
+    // padding-top: 22px
+    padding: 16px
+    padding-top: 22px
+    padding-bottom: 10px
+    width: 100%
+    outline: none
+    font-size: $fontSize-16
+    color: $black
+    &:focus
+        padding-top: 22px
+        padding-bottom: 10px
+        
+    

@@ -1,0 +1,61 @@
+.inputSelect
+    background-color: $white
+    width: 100%
+    position: relative
+
+.inputSelect__value
+    border: 1px solid $snow
+    height: 56px
+    padding-left: 16px
+    padding-right: 16px
+    display: flex
+    align-items: center
+    justify-content: space-between
+    border-radius: 4px
+    width: 100%
+
+.inputSelect__icon
+    display: flex
+    align-items: center
+    justify-content: center
+    margin-left: 15px
+    transition: .3s
+
+.inputSelect__icon--open
+    transform: rotate(-180deg)
+
+.inputSelect__text
+    color: $black
+    font-size: $fontSize-16
+    font-weight: $fontWeight-regular
+
+.inputSelect__options
+    background-color: $white
+    // border: 1px solid $black-3
+    display: flex
+    flex-direction: column
+    align-items: flex-start
+    width: 100%
+    position: absolute
+    z-index: 10
+    box-shadow: 0px 2px 12px rgb(63 76 130 / 10%), 0px 0px 4px rgb(77 103 205 / 10%)
+    border-radius: 4px
+    top: 0
+
+.inputSelect__checkOption
+    background-color: $white
+    height: 54px
+    display: flex
+    align-items: center
+    padding-left: 16px
+    padding-right: 16px
+    width: 100%
+    &:hover
+        >.inputSelect__option
+            color: $red
+
+.inputSelect__option
+    font-size: $fontSize-16
+    font-weight: $fontWeight-regular
+    color: $black
+    

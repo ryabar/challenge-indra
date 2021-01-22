@@ -1,0 +1,63 @@
+.thanks
+    padding: 60px 8%
+
+.thanks__img
+    display: none
+
+.thanks__title
+    font-size: $fontSize-28
+    font-weight: $fontWeight-normal
+    color: $black
+    >b
+        color: $red
+        font-weight: $fontWeight-regular
+
+.thanks__text
+    font-size: $fontSize-16
+    font-weight: $fontWeight-normal
+    color: $black-2
+    margin-top: 20px
+    margin-bottom: 48px
+    >b
+        font-weight: $fontWeight-medium
+
+// .thanks__next
+
+@media (min-width: 1024px)
+    .thanks
+        padding: 0px 60px
+        display: flex
+        flex-direction: column
+        align-items: flex-end
+        justify-content: center
+        // max-width: calc( 480px - 160px )
+        // max-width: 400px
+        // width: 100%
+
+    .thanks__img
+        display: flex
+        margin-bottom: -12px
+        z-index: 3
+
+    .thanks__title
+        padding-top: 30px
+        border-top: 1px solid #EDEFF5
+        font-size: $fontSize-40
+        // font-weight: $fontWeight-normal
+        // color: $black
+        // >b
+            // font-size: $fontSize-18
+            // color: $red
+            // font-weight: $fontWeight-regular
+
+    .thanks__text
+        // font-size: $fontSize-16
+        // font-weight: $fontWeight-normal
+        // color: $black-2
+        // margin-top: 20px
+        // margin-bottom: 48px
+        >b
+            font-size: $fontSize-18
+            // font-weight: $fontWeight-medium
+
+    // .thanks__next

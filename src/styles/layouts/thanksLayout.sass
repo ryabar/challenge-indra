@@ -1,0 +1,214 @@
+.thanksLayout
+    // background: linear-gradient(90deg, $red 30%, $white 0%)
+    min-height: 100vh
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: space-between
+
+.thanksLayout__topMobile
+    display: flex
+    flex-direction: column
+    align-items: flex-end
+    justify-content: flex-end
+    // position: relative
+    margin-top: 61px
+    >img
+        position: absolute
+        z-index: 2
+        margin-top: -5px
+        min-width: 50vw
+
+.thanksLayout__group
+    // display: grid
+    // grid-template-columns: 1fr 1fr
+    // align-items: center
+    // min-height: 100vh
+    max-width: 1200px
+    // margin: 0 auto
+    // padding-left: 8%
+    // padding-right: 8%
+
+.thanksLayout__logo
+    position: absolute
+    z-index: 3
+    padding: 20px 8%
+    width: 84%
+    background-color: $red
+    top: 0
+
+.thanksLayout__left
+    // min-height: 100vh
+    width: 100%
+    // background-image: url('../assets/svg/Shape_Three_Background.svg') 
+    // background-repeat: no-repeat
+    // background-position: left
+    // background-size: contain
+    // display: flex
+    // align-items: center
+    // justify-content: flex-end
+
+.thanksLayout__imgDesktop
+    display: none
+    // margin-right: -40px
+
+.thanksLayout__body
+    display: flex
+    align-items: center
+    justify-content: center
+
+.thanksLayout__footer
+    // display: none
+    display: flex
+    align-items: center
+    padding: 30px 8%
+    border-top: 1px solid #EDEFF5
+    width: calc( 100% - 16% )
+    >p
+        font-size: $fontSize-12
+        font-weight: $fontWeight-regular
+        color: #A9B1D1
+
+// @media (min-width: 768px)
+
+@media (min-width: 1024px)
+    .thanksLayout
+        background: linear-gradient(90deg, $red 30%, $white 0%)
+        // min-height: 100vh
+        display: flex
+        flex-direction: initial
+        align-items: initial
+        justify-content: initial
+
+    .thanksLayout__topMobile
+        display: none
+
+    .thanksLayout__group
+        display: grid
+        grid-template-columns: 1fr 1fr
+        align-items: center
+        min-height: 100vh
+        // max-width: 1200px
+        // width: calc( 100% - 20% )
+        margin: 0 auto
+
+        // display: grid
+        // grid-template-columns: 1fr 1fr
+        // align-items: center
+        // min-height: 100vh
+        // max-width: 1200px
+        // margin: 0 auto
+        // padding-left: 8%
+        // padding-right: 8%
+
+    .thanksLayout__logo
+        // position: absolute
+        // z-index: 3
+        // top: 25px
+        // display: none
+        // position: absolute
+        // z-index: 3
+        padding: initial
+        width: initial
+        background-color: transparent
+        left: 0px
+        padding-top: 25px
+        padding-bottom: 25px
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2)
+        left: 0
+        padding-left: 30px
+        width: calc(100% - 30px)
+        // padding-left: 8%
+        // padding: 0px 10%
+        // top: 0
+
+    .thanksLayout__left
+        min-height: 100vh
+        // max-height: 100vh
+        width: 100%
+        // background-image: url('@Assets/svg/Shape_Three_Background.svg')
+        background-repeat: no-repeat
+        background-position: left
+        background-size: contain
+        display: flex
+        align-items: center
+        justify-content: flex-end
+        padding-left: 8%
+        position: relative
+        overflow: hidden
+        &::before
+            content: ""
+            position: absolute
+            z-index: 0
+            width: 75%
+            height: 110%
+            left: -3%
+            background-color: $red
+            border-top-left-radius: 0px
+            border-top-right-radius: 0px
+            border-bottom-left-radius: 0px
+            border-bottom-right-radius: 50% 20%
+            transform: rotate(3deg)
+
+    .thanksLayout__imgDesktop
+        display: flex
+        z-index: 1
+        height: 425px
+        width: auto
+        // margin-right: -20px
+
+    .thanksLayout__body
+        display: flex
+        align-items: center
+        justify-content: center
+
+    .thanksLayout__footer
+        display: none
+
+@media (min-width: 1200px)
+    .thanksLayout__imgDesktop
+        margin-right: 60px
+
+@media (min-width: 1400px)
+    .thanksLayout__imgDesktop
+        margin-right: 60px
+
+@media (min-width: 1600px)
+    // .thanksLayout
+    //     background: linear-gradient(90deg, $red 30%, $white 0%)
+    //     // min-height: 100vh
+    //     // display: flex
+    //     // flex-direction: initial
+    //     // align-items: initial
+    //     // justify-content: initial
+
+    .thanksLayout__imgDesktop
+        margin-right: 160px
+
+    .thanksLayout__left
+        // min-height: 100vh
+        // // max-height: 100vh
+        // width: 100%
+        // // background-image: url('@Assets/svg/Shape_Three_Background.svg')
+        // background-repeat: no-repeat
+        // background-position: left
+        // background-size: contain
+        // display: flex
+        // align-items: center
+        // justify-content: flex-end
+        // padding-left: 8%
+        // position: relative
+        // overflow: hidden
+        &::before
+            // content: ""
+            // position: absolute
+            // z-index: 0
+            width: 60%
+            // height: 110%
+            // left: -3%
+            // background-color: $red
+            // border-top-left-radius: 0px
+            // border-top-right-radius: 0px
+            // border-bottom-left-radius: 0px
+            // border-bottom-right-radius: 50% 20%
+            // transform: rotate(3deg)

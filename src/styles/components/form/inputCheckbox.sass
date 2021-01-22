@@ -1,0 +1,36 @@
+.inputCheckbox
+    display: flex
+    align-items: flex-start
+
+.inputCheckbox__input
+    display: none
+    &:checked ~ .inputCheckbox__box
+        background-color: $green
+        border: 1px solid $green
+        
+
+.inputCheckbox__box
+    display: flex
+    align-items: center
+    justify-content: center
+    width: 20px
+    height: 20px
+    border-radius: 4px
+    border: 1px solid $snow
+    transition: .3s
+    &:hover
+        cursor: url('@Assets/svg/Cursor_Hand.svg') 40 40, auto
+
+.inputChekbox__group
+    font-size: 12px
+    color: $black-3
+    display: inline
+    margin-left: 12px
+
+.inputChekbox__text
+    // font-size: 
+
+.inputChekbox__link
+    color: $black-3
+    &:visited
+        color: $black-3

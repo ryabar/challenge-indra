@@ -1,0 +1,40 @@
+.inputRadio
+    display: flex
+    align-items: center
+
+.inputRadio__input
+    display: none
+    &:checked ~ .inputRadio__radio
+        border: 1px solid $green
+        &::before
+            content: ""
+            width: 12px
+            height: 12px
+            border-radius: 50%
+            background-color: $green
+
+    &:checked ~ .inputRadio__text
+        ont-size: $fontSize-16
+        font-weight: $fontWeight-regular
+        color: $black
+        
+
+.inputRadio__radio
+    display: flex
+    align-items: center
+    justify-content: center
+    min-width: 20px
+    min-height: 20px
+    max-width: 20px
+    max-height: 20px
+    border-radius: 50%
+    border: 1px solid $black-3
+    transition: .3s
+    &:hover
+        cursor: url('@Assets/svg/Cursor_Hand.svg') 40 40, auto
+
+.inputRadio__text
+    margin-left: 12px
+    font-size: $fontSize-16
+    font-weight: $fontWeight-regular
+    color: $black-3
